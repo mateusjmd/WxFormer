@@ -19,7 +19,7 @@ campeão foi avaliado num conjunto de teste fixo e numa inferência pontual para
 | 50 anos     | 1,6743 °C     | 1,6639 °C          |
 | 75 anos     | 1,6530 °C     | 1,3248 °C          |
 
-O principal comportamente observado foi a queda monotônica do RMSE de teste para acréscimo do volume de dados, contudo, com retornos decrescentes: a
+O principal comportamento observado foi a queda monotônica do RMSE de teste para acréscimo do volume de dados, contudo, com retornos decrescentes: a
 maior queda proporcional ocorre entre 10 e 50 anos (−8,8 %); de 50 para 75 anos, a melhora é de apenas −1,3%.
 
 
