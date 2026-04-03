@@ -1,6 +1,6 @@
 # WxFormer — Previsão Meteorológica com Transformer
 
-O WxFormer consiste em um modelo de *encoder* Transformer para previsão pontual de temperatura do ar a 2 m de elevação em relação ao solo para a localidade de Campinas, SP, $(\text{lat} -47.1°, \text{ long} -22.9°)$
+O WxFormer consiste em um modelo de *encoder* Transformer para previsão pontual de temperatura do ar a 2 m de elevação em relação ao solo para a localidade de Campinas, SP, $(\text{lat}: -47.1°, \text{ long}: -22.9°)$
 com horizonte de 24 horas a partir de uma janela de contexto de 168 horas de reanálise obtidas pelo dataset ERA5-Land (ECMWF).
 
 > **📌 Observação:** A documentação técnica completa, incluindo metodologia detalhada, resultados e discussão se encontra em [**WxFormer**](./WxFormer.pdf).
@@ -20,7 +20,7 @@ campeão foi avaliado num conjunto de teste fixo e numa inferência pontual para
 | 75 anos     | 1,6530 °C     | 1,3248 °C          |
 
 O principal comportamente observado foi a queda monotônica do RMSE de teste para acréscimo do volume de dados, contudo, com retornos decrescentes: a
-maior queda proporcional ocorre entre 10 e 50 anos $(−8,8 \%)$; de 50 para 75 anos, a melhora é de apenas $−1,3 \%$.
+maior queda proporcional ocorre entre 10 e 50 anos (−8,8 %); de 50 para 75 anos, a melhora é de apenas −1,3%.
 
 
 ## Arquitetura
@@ -105,7 +105,7 @@ python main.py
 python main.py --skip-tuning
 
 # Controle explícito de trials e dispositivo
-python main.py --n-trials 30 --device cuda
+python main.py --n-trials 50 --device cuda
 ```
 
 ### Inferência pontual
