@@ -95,6 +95,8 @@ pip install torch>=2.1 --index-url https://download.pytorch.org/whl/cu121
 
 ## Uso
 
+> **📌 Observação:** Para reproduzir o treinamento/inferência especificamente sobre uma das janelas temporais disponíveis, é necessário acessar o arquivo `config.py`, navegar até as seções **"Arquivos NetCDF do ERA5-Land"** e **"Divisão Temporal"**, comentar as linhas relativas aos períodos que não deseja utilizar e descomentar as linhas relativas ao período desejado. O padrão é definido para o período de 5 anos (**5Y**).
+
 ### Treinamento
 
 ```bash
