@@ -86,8 +86,7 @@ from data.loader        import load_and_merge_nc
 from data.features      import build_features
 from data.normalization import FeatureNormalizer
 from model.transformer  import WeatherTransformer
-from training.metrics   import compute_metrics
-from training.evaluate  import _apply_paper_style
+from training.evaluate  import _apply_paper_style, compute_metrics
 
 # ---------------------------------------------------------------------------
 # Configuração de logging
